@@ -20,3 +20,10 @@ that is instantiated in the local site manager of a Plone site::
 
   site_manager = getsitemanager(my_plone_site)
   cleanup_leftovers(site_manager)
+
+ 	
+Tested
+------
+
+.. image:: https://secure.travis-ci.org/gotcha/cleanup_zope_persistent_registry.png?branch=master
+   :target: http://travis-ci.org/#!/gotcha/cleanup_zope_persistent_registry
