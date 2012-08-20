@@ -12,8 +12,8 @@ This leads to nasty bugs when the code that defined those interfaces is removed
 from the system.
 
 This package defines a function that cleans up those leftover interfaces.
-It must be called on a ``PersistentAdapterRegistry`` like the one
-that is instantiated in the local site manager of a Plone site::
+It must be called on a site manager, instance of ``PersistentComponents``
+like the local site manager of a Plone site::
 
   from zope.component import getSiteManager
   from cleanup_zope_persistent_registry import cleanup_leftovers
