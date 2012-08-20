@@ -1,4 +1,9 @@
-def cleanup(registry):
+def cleanup_leftovers(site_manager):
+    cleanup_registry(site_manager.adapters)
+    cleanup_registry(site_manager.utilities)
+
+
+def cleanup_registry(registry):
     adapters = registry._adapters
     for i in range(len(adapters)):
         cleanup_empty_adapters(adapters[i])

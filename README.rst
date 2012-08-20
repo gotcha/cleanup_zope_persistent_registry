@@ -18,5 +18,5 @@ that is instantiated in the local site manager of a Plone site::
   from zope.component import getSiteManager
   from cleanup_zope_persistent_registry import cleanup_leftovers
 
-  persistent_registry = getSiteManager(my_plone_site).adapters
-  cleanup_leftovers(persistent_registry)
+  site_manager = getsitemanager(my_plone_site)
+  cleanup_leftovers(site_manager)
