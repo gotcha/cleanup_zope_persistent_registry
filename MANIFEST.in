@@ -1,0 +1,6 @@
+include *.txt *.rst
+exclude bootstrap.py MANIFEST.in
+prune lib
+prune include
+prune bin
+global-exclude *.pyc ^.*
