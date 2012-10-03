@@ -1,6 +1,6 @@
 include *.txt *.rst
-exclude bootstrap.py MANIFEST.in
+exclude bootstrap.py MANIFEST.in .gitignore .travis.tml buildout.cfg
 prune lib
 prune include
 prune bin
-global-exclude *.pyc ^.*
+global-exclude *.pyc
