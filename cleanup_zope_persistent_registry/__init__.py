@@ -10,7 +10,7 @@ def cleanup_registry(registry):
     subscribers = registry._subscribers
     for i in range(len(subscribers)):
         cleanup_empty_subscribers(subscribers[i])
-    registry.p_changed = True
+    registry._p_changed = True
 
 
 def cleanup_empty_adapters(map):
